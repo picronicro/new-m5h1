@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+.header {
+    margin: 10px auto;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer {
+    font-size: 12px;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* PostsPage */
+.post_body {
+    padding: 0 120px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.body {
+    font-size: 0;
+    transition: 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.post_body:hover .body {
+    display: block;
+    font-size: 16px;
+    transition: 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* FormPage */
+.form {
+    margin: auto;
+    width: 320px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form button {
+    margin-top: 6px;
 }
